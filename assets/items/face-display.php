@@ -1,0 +1,1 @@
+<a><img class="mc-head img-thumbnail" src="./assets/img/head.png"></a>

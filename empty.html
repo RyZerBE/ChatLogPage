@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RyzerBE Chatlog</title>
+  <!-- BOOTSTRAP -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- BOOTSTRAP ICONS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/style/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <h1 class="text-mid">Chatlog | Steve</h1>
+
+
+      <form action="chatlog.php" method="post">
+
+
+        <div class="mb-3">
+          <input type="text" class="form-control" tabindex="1" id="id" name="id" placeholder="Your Chatlog-ID"
+            maxlength="7" minlength="7">
+          <small id=" emailHelp" class="text-mid form-text text-muted">Get ur ChatlogID ingame with /chatlog</small>
+        </div>
+
+        <div class="mb-3">
+          <div class="form-group col-md-5"></div>
+          <div class="container text-center">
+            <button type="submit" tabindex="2" title="Bestätigen" id="submit" name="submit" value="submit"
+              class="btn btn-primary">Submit
+            </button>
+          </div>
+        </div>
+
+<!--         
+        <div class="mb-3 input-group">
+          <span class="chatlog-time input-group-text" id="chatlog-time">19:37</span>
+          <span class="chatlog-name input-group-text" id="chatlog-name">Chillihero</span>
+          <input class="form-control" type="text" placeholder="Tralalalal bubuubu Anananananan yessss"
+            aria-label="Disabled input example" disabled>
+        </div>
+        <div class="mb-3 input-group">
+          <span class="chatlog-time input-group-text" id="chatlog-time">19:37</span>
+          <span class="chatlog-name input-group-text" id="chatlog-name">Chillihero</span>
+          <input class="form-control" type="text" placeholder="Tralalalal bubuubu Anananananan yessss"
+            aria-label="Disabled input example" disabled>
+        </div> -->
+
+
+
+      </form>
+    </div>
+  </div>
+  
+</body>
+
+</html>
