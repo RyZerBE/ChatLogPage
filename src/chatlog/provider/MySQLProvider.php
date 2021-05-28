@@ -26,7 +26,7 @@ class MySQLProvider implements Providable {
 	 * @return Chatlog|null
 	 */
 	public function getChatlog(string $id): ?Chatlog {
-		$stmt = $this->mysql->prepare("SELECT * FROM Chatlogs WHERE id = ?");
+		$stmt = $this->mysql->prepare("SELECT * FROM ChatLogs WHERE id = ?");
 		$stmt->bind_param("s", $id);
 		if (!$stmt->execute() or !($result = $stmt->get_result()) or !$result->num_rows) return null;
 		
