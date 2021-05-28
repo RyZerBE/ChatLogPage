@@ -13,7 +13,7 @@ final class ChatlogManager {
 
 	public function __construct() {
 		spl_autoload_register(function (string $class): void {
-			require str_replace("chatlog\\", __DIR__ . DIRECTORY_SEPARATOR, $class) . ".php";
+			require str_replace(["chatlog\\", "\\"], [__DIR__ . DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR], $class) . ".php";
 		});
 	}
 	
