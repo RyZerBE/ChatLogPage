@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RyzerBE Chatlog</title>
+  <title>RyZerBE Chatlog</title>
   <!-- BOOTSTRAP -->
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -28,7 +28,7 @@
 
             <div class="input-group mb-3">
               <input type="text" class="form-control" placeholder="Chatlog..."
-                aria-label="Recipient's username" aria-describedby="button-addon2">
+                aria-label="Recipient's username" aria-describedby="button-addon2" name="id">
               <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
             </div>
 

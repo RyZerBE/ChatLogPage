@@ -1,41 +1,17 @@
+<?php use chatlog\ChatlogManager;
+
+if (!isset($chatlog)) return; ?>
 <form class="chatlog">
+<?php
 
-<div class="mb-3 input-group">
-  <span class="chatlog-time input-group-text" id="chatlog-time">19:37</span>
-  <span class="chatlog-name input-group-text" id="chatlog-name">Chillihero</span>
-  <input class="form-control" type="text" placeholder="Tralalalal bubuubu Anananananan yessss"
-    aria-label="Disabled input example" disabled>
-</div>
-
-<div class="mb-3 input-group">
-  <span class="chatlog-time input-group-text" id="chatlog-time">19:37</span>
-  <span class="chatlog-name input-group-text" id="chatlog-name">Chillihero</span>
-  <input class="form-control" type="text" placeholder="Tralalalal bubuubu Anananananan yessss"
-    aria-label="Disabled input example" disabled>
-</div>
-<div class="mb-3 input-group">
-  <span class="chatlog-time input-group-text" id="chatlog-time">19:37</span>
-  <span class="chatlog-name input-group-text" id="chatlog-name">Chillihero</span>
-  <input class="form-control" type="text" placeholder="Tralalalal bubuubu Anananananan yessss"
-    aria-label="Disabled input example" disabled>
-</div>
-<div class="mb-3 input-group">
-  <span class="chatlog-time input-group-text" id="chatlog-time">19:37</span>
-  <span class="chatlog-name input-group-text" id="chatlog-name">Chillihero</span>
-  <input class="form-control" type="text" placeholder="Tralalalal bubuubu Anananananan yessss"
-    aria-label="Disabled input example" disabled>
-</div>
-<div class="mb-3 input-group">
-  <span class="chatlog-time input-group-text" id="chatlog-time">19:37</span>
-  <span class="chatlog-name input-group-text" id="chatlog-name">Chillihero</span>
-  <input class="form-control" type="text" placeholder="Tralalalal bubuubu Anananananan yessss"
-    aria-label="Disabled input example" disabled>
-</div>
-<div class="mb-3 input-group">
-  <span class="chatlog-time input-group-text" id="chatlog-time">19:37</span>
-  <span class="chatlog-name input-group-text" id="chatlog-name">Chillihero</span>
-  <input class="form-control" type="text" placeholder="Tralalalal bubuubu Anananananan yessss"
-    aria-label="Disabled input example" disabled>
-</div>
+foreach (ChatlogManager::convertToArray($chatlog->messages) as $message) {
+    ?>
+    <div class="mb-3 input-group">
+      <input class="form-control" type="text" placeholder="<?php echo $message; ?>"
+        aria-label="Disabled input" disabled>
+    </div>
+    <?php
+}
+?>
 
 </form>
