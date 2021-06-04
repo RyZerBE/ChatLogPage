@@ -42,12 +42,9 @@
 
               </div>
             </div>
-          </div>
+                        </div>
       </form>
-    </div>
-  </div>
-
-  <div class="socialmedia">
+    <div class="socialmedia">
     <ul>
       <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
       <li><a href="#"><i class="fab fa-youtube"></i></a></li>
@@ -55,7 +52,10 @@
       <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
     </ul>
   </div>
+ 
 
+  
+</duv
 </body>
 
 </html>

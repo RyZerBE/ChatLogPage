@@ -61,21 +61,14 @@ html {
 
 /*SOCIALMEDIA*/
 .socialmedia {
-  position: fixed;
-  bottom: 3rem;
-  text-align: center;
-}
-footer {
-  position: fixed;
-  bottom: 3rem;
-  text-align: center;
 }
 
 ul {
-
-  margin: 0;
-  padding: 0;
   display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0;
+  list-style-type: none;
 }
 
 ul li {
@@ -83,7 +76,6 @@ ul li {
 }
 
 ul li a {
- 
   width: 60px;
   height: 60px;
   display: block;
